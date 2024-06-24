@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+<audio id="audioPlayer" autoplay loop>
+    <source src="assets/assets/audio/song.mp4" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<header>
+    <div class="logo">
+        <img src="https://i.ibb.co/3BKLStY/DALL-E-2024-06-24-12-21-46-A-tech-infused-funky-logo-for-Slimfunk-Design-and-Development-The-design.webp" alt="Logo">
+    </div>
+    <h1 class="header-title">SLIM FUNK DESIGN <br>& DEVELOPMENT</h1>
+    <nav>
+        <ul>
+            <li><a href="#" id="services-link">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="audio-controls">
+        <button id="muteButton">Mute</button>
+        <button id="stopButton">Stop</button>
+        <button id="nextButton">Next</button>
+    </div>
+</header>
+
+<main>
+    <div id="hero">
+        <div class="hero-content">
+            <div class="name-section">
+                <h2>Christian</h2>
+                <h2>Westby</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- New section for FrontEnd Developer -->
+    <section id="frontend-developer">
+        <h1>FRONTEND DEVELOPER - JR.</h1>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="cards-container">
+            <a href="https://midnightfalcons.netlify.app/" class="card" target="_blank">
+                <img src="https://i.ibb.co/Mcjq4nR/QR-Code02.png" alt="Design 1">
+                <div class="overlay"></div>
+                <span>BARCODE</span>
+            </a>
+            <a href="https://fancy-eclair-3003f0.netlify.app" class="card" target="_blank">
+                <img src="assets/assets/images/1-godzilla-king-of-monsters.jpg" alt="Design 2">
+                <div class="overlay"></div>
+                <span>First JavaScript</span>
+            </a>
+            <a href="https://theblogspot.netlify.app" class="card" target="_blank">
+                <img src="https://i.ibb.co/LzkjSCH/theblogspot.png" alt="Design 3">
+                <div class="overlay"></div>
+                <span>The Blogspot</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills in progress..</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Mac"></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows"></div>
+        </div>
+    </section>
+
+    <section id="profile-image">
+        <img src="" alt="Profile Image">
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>When you focus on problems, you’ll have more problems.</p>
+                <p>When you focus on possibilities, you’ll have more opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up window for contact section -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h1>Contact Me</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pop-up window for about section -->
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h1>About Me</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I have worked for 10 years as a security advisor and civil guard. I worked almost 10 years in security and acute psychiatry at Blakstad Hospital. I am a trained healthcare worker with authorization. I have studied technical drawing and technical building subjects from high school and Graphic Design from MI. Additionally, I have completed a one-year course in Security Management from BI Stavanger. I am a father to a 7-year-old boy and a husband to a 38-year-old wife. We love spending time in the mountains and our cabin there. Currently, I am pursuing a 2-year education as a Front-End Developer at NorOff Vocational School.</p>
+                </div>
+                <img src="https://i.ibb.co/4RZM4kX/image.png" alt="Me and My Son" class="about-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Placeholder for services popup -->
+    <div id="services-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h1>Services</h1>
+            <p>Details about services will be added here...</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="https://i.ibb.co/3BKLStY/DALL-E-2024-06-24-12-21-46-A-tech-infused-funky-logo-for-Slimfunk-Design-and-Development-The-design.webp" alt="Logo">
+        </div>
+        <p>© 2024 SLIM FUNK DESIGN. All rights reserved.</p>
+        <div class="footer-row">
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="https://github.com/ChristianWestby">GitHub</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

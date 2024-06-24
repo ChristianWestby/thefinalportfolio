@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slimfunk Design and Development</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="portfolio.js" defer></script> <!-- Use portfolio.js here as well -->
+</head>
+<body>
+<audio id="audioPlayer" autoplay loop>
+    <source src="assets/audio/your_audio_file.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<header>
+    <div class="logo">
+        <img src="https://i.ibb.co/3BKLStY/DALL-E-2024-06-24-12-21-46-A-tech-infused-funky-logo-for-Slimfunk-Design-and-Development-The-design.webp" alt="Slimfunk Design and Development Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" id="services-link">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Slimfunk Design and Development</h1>
+            <p>Innovative designs with a retro twist.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Slimfunk Design and Development. All rights reserved.</p>
+</footer>
+
+<!-- Pop-up window for services -->
+<div id="services-popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h1>Our Services</h1>
+        <ul>
+            <li>Customer Relationship Building: Building strong customer relationships</li>
+            <li>Sales: Sales strategies and execution</li>
+            <li>Security: Ensuring security and safety</li>
+            <li>Front-End Programming: Cutting-edge front-end programming</li>
+            <li>Development: Comprehensive development solutions</li>
+            <li>UX Design: User experience design for optimal usability</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Pop-up window for contact section -->
+<div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
