@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const audioPlayer = document.getElementById("audioPlayer");
+    const playButton = document.getElementById("playButton");
     const muteButton = document.getElementById("muteButton");
     const stopButton = document.getElementById("stopButton");
     const nextButton = document.getElementById("nextButton");
@@ -12,19 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const servicesLink = document.getElementById("services-link");
     const heroContent = document.querySelector('.hero-content');
 
-    // Function to handle play audio
-    function playAudio() {
-        if (audioPlayer) {
-            audioPlayer.play().catch(error => {
-                console.log("Audio play prevented by browser policy.");
-            });
-        }
-    }
+    if (audioPlayer && playButton && muteButton && stopButton && nextButton) {
+        playButton.addEventListener("click", function() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.textContent = "Pause";
+            } else {
+                audioPlayer.pause();
+                playButton.textContent = "Play";
+            }
+        });
 
-    // Ensure audio starts playing after user interaction
-    document.body.addEventListener("click", playAudio, { once: true });
-
-    if (audioPlayer && muteButton && stopButton && nextButton) {
         muteButton.addEventListener("click", function() {
             if (audioPlayer.muted) {
                 audioPlayer.muted = false;
@@ -38,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         stopButton.addEventListener("click", function() {
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
+            playButton.textContent = "Play";
         });
 
         nextButton.addEventListener("click", function() {

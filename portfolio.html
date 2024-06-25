@@ -20,6 +20,7 @@
     <h1 class="header-title">SLIM FUNK DESIGN <br>& DEVELOPMENT</h1>
     <nav>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#" id="services-link">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -27,11 +28,14 @@
             <li><a href="#" id="contact-link">Contact</a></li>
         </ul>
     </nav>
+    
     <div class="audio-controls">
+        <button id="playButton">Play</button>
         <button id="muteButton">Mute</button>
         <button id="stopButton">Stop</button>
         <button id="nextButton">Next</button>
     </div>
+    
 </header>
 
 <main>
@@ -83,16 +87,13 @@
         </div>
     </section>
 
-    <section id="profile-image">
-        <img src="" alt="Profile Image">
-    </section>
-
     <section id="testimonials">
         <h2>Testimonials</h2>
         <div class="testimonials-container">
             <div class="testimonial-card">
                 <p>When you focus on problems, you’ll have more problems.</p>
                 <p>When you focus on possibilities, you’ll have more opportunities.</p>
+                <p>Zig Ziglar</p>
             </div>
         </div>
     </section>
@@ -103,15 +104,18 @@
             <span class="close">&times;</span>
             <h1>Contact Me</h1>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Your Email">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -131,12 +135,17 @@
         </div>
     </div>
 
-    <!-- Placeholder for services popup -->
+    <!-- Pop-up window for services section -->
     <div id="services-popup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
-            <h1>Services</h1>
-            <p>Details about services will be added here...</p>
+            <h1>Our Services</h1>
+            <p><span class="highlight">Customer Relationship Building:</span> Building strong customer relationships</p>
+            <p><span class="highlight">Sales:</span> Sales strategies and execution</p>
+            <p><span class="highlight">Security:</span> Ensuring security and safety</p>
+            <p><span class="highlight">Front-End Programming:</span> Cutting-edge front-end programming</p>
+            <p><span class="highlight">Development:</span> Comprehensive development solutions</p>
+            <p><span class="highlight">UX Design:</span> User experience design for optimal usability</p>
         </div>
     </div>
 </main>

@@ -43,6 +43,26 @@ nav a {
     text-decoration: none;
 }
 
+.audio-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.audio-controls button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.audio-controls button:hover {
+    background-color: #555;
+}
+
 #hero {
     background: linear-gradient(45deg, #BE6A15, #BF2415, #111, #EDE5C4);
     background-size: 200% 200%;
@@ -101,26 +121,32 @@ main {
 
 .name-section h2 {
     font-size: 65px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #frontend-developer {
     position: absolute;
     top: 120px;
     left: 70px;
-    width: 400px;
-    height: 160px;
+    width: 450px; /* Increased width */
+    height: 200px; /* Increased height */
     border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Added a slight background color */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
 #frontend-developer h1 {
     color: white;
-    font-size: 24px;
+    font-size: 28px; /* Increased font size */
     font-weight: bold;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #projects {
@@ -230,6 +256,12 @@ main {
     border-radius: 10px;
     padding: 10px;
     background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 #profile-image img {
@@ -269,8 +301,6 @@ main {
     font-size: 20px; /* Increase the font size */
     color: #fff;
 }
-
-
 
 /* Updated Popup Styling */
 .popup {
@@ -317,13 +347,17 @@ main {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
 }
 
-#contact-popup h1 {
+#contact-popup h1,
+#services-popup h1,
+#about-popup h1 {
     margin-bottom: 20px;
     font-size: 2em;
     z-index: 1;
 }
 
-#contact-popup form {
+#contact-popup form,
+#services-popup form,
+#about-popup form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,11 +365,19 @@ main {
     z-index: 1;
 }
 
-#contact-popup label {
+#contact-popup label,
+#services-popup label,
+#about-popup label {
     font-size: 1.2em;
+    align-self: flex-start;
 }
 
-#contact-popup input, #contact-popup textarea {
+#contact-popup input,
+#contact-popup textarea,
+#services-popup input,
+#services-popup textarea,
+#about-popup input,
+#about-popup textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -345,7 +387,9 @@ main {
     color: white;
 }
 
-#contact-popup button {
+#contact-popup button,
+#services-popup button,
+#about-popup button {
     padding: 10px 20px;
     background-color: #ff8a36;
     color: white;
@@ -356,7 +400,9 @@ main {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-#contact-popup button:hover {
+#contact-popup button:hover,
+#services-popup button:hover,
+#about-popup button:hover {
     background-color: #e07a30;
 }
 
@@ -376,6 +422,39 @@ main {
     color: #ccc;
     text-decoration: none;
     cursor: pointer;
+}
+
+#services-popup p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#services-popup p .highlight {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#about-popup .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#about-popup .about-text {
+    text-align: left;
+    line-height: 1.6;
+}
+
+#about-popup .about-image {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-top: -20px; /* Move the image up */
 }
 
 footer {
